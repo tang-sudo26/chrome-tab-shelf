@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "TabShelf",
+  "version": "1.0.0",
+  "description": "在新标签页收藏和整理浏览器标签页。",
+  "icons": {
+    "16": "icons/tabshelf-16.png",
+    "32": "icons/tabshelf-32.png",
+    "48": "icons/tabshelf-48.png",
+    "128": "icons/tabshelf-128.png"
+  },
+  "permissions": ["tabs", "storage", "search", "favicon"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  }
+}
